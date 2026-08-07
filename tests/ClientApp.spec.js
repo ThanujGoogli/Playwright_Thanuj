@@ -53,12 +53,12 @@ test('Client App Login',async({page})=>{
     await page.locator('.actions a').click()
     expect(await page.locator('.hero-primary').textContent()).toContain(' Thankyou for the order. ')
     const orderNumber = await page.locator('label.ng-star-inserted').textContent()
+
     //Orders Page
     await page.locator("button[routerlink*='myorders']").click()
     await page.locator('tbody tr').first().waitFor()
     const TableRows = page.locator('tbody tr')
     const RowNumber = await TableRows.count()
-    // console.log(RowNumber)
     for(let i =0;i< RowNumber;i++){
 
         let text = await TableRows.nth(i).locator('th').textContent()
