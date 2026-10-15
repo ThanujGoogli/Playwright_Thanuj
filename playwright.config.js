@@ -21,8 +21,9 @@ export default defineConfig({
   // reporter: 'html',
   use: {
     
-    browserName : 'chromium',
-    headless: true
+    browserName : 'firefox',
+    headless: true,
+    screenshot: 'only-on-failure',
   },
 });
 
