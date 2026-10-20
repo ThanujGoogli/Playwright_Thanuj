@@ -21,9 +21,12 @@ export default defineConfig({
   // reporter: 'html',
   use: {
     
-    browserName : 'firefox',
-    headless: true,
+    browserName : 'webkit',
+    headless: true,  
     screenshot: 'only-on-failure',
+    ignoreHTTPSErrors: true,
+    // viewport: { width: 1280, height: 720 },
+    ...devices['iPhone 11']
   },
 });
 
