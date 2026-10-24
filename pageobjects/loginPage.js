@@ -1,4 +1,4 @@
-class loginPage{
+export class loginPage{
 
     
 
@@ -23,4 +23,3 @@ class loginPage{
         await this.signin.click();
     }
 }
-module.exports={loginPage};

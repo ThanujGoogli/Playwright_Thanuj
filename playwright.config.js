@@ -18,10 +18,10 @@ export default defineConfig({
   expect : {
     timeout : 1000,
   },
-  // reporter: 'html',
+   reporter: 'html',
   use: {
     
-    browserName : 'webkit',
+    browserName : 'chromium',
     headless: true,  
     screenshot: 'only-on-failure',
     ignoreHTTPSErrors: true,

@@ -1,4 +1,4 @@
-class OrderHistorypage{
+export class OrderHistorypage{
 
     constructor(page){
 
@@ -31,4 +31,3 @@ class OrderHistorypage{
     }
 
 }
-module.exports = {OrderHistorypage}

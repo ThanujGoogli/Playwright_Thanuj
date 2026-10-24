@@ -1,4 +1,4 @@
-class DashboardPage{
+export class DashboardPage{
 
     constructor(page){
         this.page = page;
@@ -28,4 +28,3 @@ class DashboardPage{
     }
 }
 
-module.exports = {DashboardPage}

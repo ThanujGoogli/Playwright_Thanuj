@@ -1,8 +1,8 @@
-import {loginPage} from '../pageobjects/loginPage';
-import {DashboardPage} from '../pageobjects/DashboardPage';
-import {CartScreen} from '../pageobjects/CartScreen';
-import {OrderHistorypage} from '../pageobjects/OrderHistorypage';
-class POManager{
+import {loginPage} from '../pageobjects/loginPage.js';
+import {DashboardPage} from '../pageobjects/DashboardPage.js';
+import {CartScreen} from '../pageobjects/CartScreen.js';
+import {OrderHistorypage} from '../pageobjects/OrderHistorypage.js';
+export class POManager{
 
     constructor(page){
         this.page = page;
@@ -24,4 +24,3 @@ class POManager{
         return this.OrderHistoryPage;
     }
 }
-module.exports = {POManager}

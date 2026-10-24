@@ -1,5 +1,5 @@
 import {expect} from '@playwright/test';
-class CartScreen{
+export class CartScreen{
 
     constructor(page){
         this.page = page;
@@ -44,4 +44,3 @@ class CartScreen{
     }
 
 }
-module.exports = {CartScreen}
