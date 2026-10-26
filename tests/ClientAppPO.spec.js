@@ -3,7 +3,7 @@ import {customtest} from './Utils/test-base.js';
 import {POManager} from '../pageobjects/POManager.js';
 const dataSet = JSON.parse(JSON.stringify(require('./Utils/PlaceorderTestData.json')));
 
-test.only('Client App Login',async({page})=>{
+test('Client App Login',async({page})=>{
 
     //Login Page
     const poManager = new POManager(page);

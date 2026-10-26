@@ -5,3 +5,8 @@ node_modules/
 /playwright-report/
 /blob-report/
 /playwright/.cache/
+
+ az role assignment create \
+  --assignee "930dab8a-76c8-4bab-a4d0-5d8cd5036dc3" \
+  --role "Storage Blob Data Contributor" \
+  --scope "$(az storage account show --name pwstrgprac19155 --resource-group Prac_1 --query id -o tsv)"
