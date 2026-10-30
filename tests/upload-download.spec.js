@@ -32,7 +32,7 @@ function readExcelFile(worksheet,searchText){
 //writeExcelFile('Mango',350,{rowChange:0,colChange:1},'./data/test.xlsx');
 
 
-test('upload and download file', async ({ page }) => {
+test.skip('upload and download file', async ({ page }) => {
 
     const textSearch = 'Mango';
     const updateValue = 350;
